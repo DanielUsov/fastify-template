@@ -1,2 +1,3 @@
-# fastify-template
+# Fastify Template
+
 Fastify + TS project template

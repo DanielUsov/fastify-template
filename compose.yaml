@@ -1,0 +1,13 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: best-cover-letter-app
+    restart: always
+    env_file:
+      - .env
+    environment:
+      SERVER_HOST: 0.0.0.0
+    ports:
+      - ${SERVER_PORT}:${SERVER_PORT}
